@@ -1,11 +1,14 @@
 package es.icp.testingfeaturesjava;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import es.icp.testingfeaturesjava.ui.UserViewModelActivity;
+import es.icp.testingfeaturesjava.ui.ViewModelActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setUpView();
     }
 
-    private void setUpView(){
+    private void setUpView() {
         btViewModel = findViewById(R.id.btViewModel);
         btViewModel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btUserViewModel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                startActivity(new Intent(getApplicationContext(), UserViewModelActivity.class));
+                startActivity(new Intent(getApplicationContext(), UserViewModelActivity.class));
             }
         });
 

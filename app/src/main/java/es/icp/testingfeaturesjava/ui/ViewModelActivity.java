@@ -1,4 +1,4 @@
-package es.icp.testingfeaturesjava;
+package es.icp.testingfeaturesjava.ui;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
+import es.icp.testingfeaturesjava.R;
 import es.icp.testingfeaturesjava.util.Sumar;
 import es.icp.testingfeaturesjava.viewmodel.SumarViewModel;
 
